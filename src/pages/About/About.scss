@@ -1,0 +1,238 @@
+.aboutUs{
+    width: 100%;
+    .background{
+        
+        position: relative;
+        color: #FFF8EE;
+        img{
+            min-width: 100%;
+            background-size: auto;
+            background-repeat: none;
+            background-position: center;
+        }
+        h2{
+            
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 41px;
+        }
+    }
+    .ourStory{
+        padding:30px 300px;
+
+        .story_1{
+            padding: 50px;
+            border: 3px solid #CC3333;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            .leftImg{
+
+            }
+            .rightContent{
+                .info_1{
+                    padding: 20px;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 23px;
+                    text-align: justify;
+                    color: #2A435D;
+                }
+                .info_2{
+                                        padding: 20px;
+
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    text-align: justify;
+                    color: #2A435D;
+                }
+            }
+        }
+        .story_2{
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            .leftImg{
+
+            }
+            .leftContent{
+                .info_1{
+                    padding: 20px;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 23px;
+                    text-align: justify;
+                    color: #2A435D;
+                }
+                .info_2{
+                    padding: 20px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    text-align: justify;
+                    color: #2A435D;
+                }
+            }
+        }
+    }
+    .ourChef{
+        padding:0 300px;
+        background-color: #FFDFDF;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+
+        .leftColumn{
+            position: relative;
+            padding-left: 130px;
+            width: fit-content;
+
+            .info_1{
+                padding: 20px 0;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 29px;
+                color: #CC3333;
+            }
+            .info_2{
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 41px;
+                color: #2A435D;
+            }
+            .info_3{
+                
+                padding: 20px 0;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                color: #2A435D;
+            }
+            .btn_read{
+                float: right;
+                text-align: center;
+                background: #CC3333;
+                padding: 10px;
+                width: 300px;
+                border-radius: 20px;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 29px;
+                color: #FFF8EE;
+                margin-left: 20px;
+            }
+        }
+        .rightColumn{
+            padding-right: 130px;
+            img{
+            }
+        }
+    }
+    .special_service{
+        padding: 30px 300px;
+        .title {
+            text-align: center;
+            .main_title {
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 41px;
+                text-align: center;
+                color: #2A435D;
+            }
+
+            .sub_title {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                text-align: center;
+                color: #CC3333;
+            }
+        }
+        .info_services{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            .left_column{
+            padding: 50px;
+                .main_title{
+                    font-weight: 700;
+                    font-size: 35px;
+                    line-height: 41px;
+                    text-align: center;
+                    color: #CC3333;
+                }
+                .sub_title{
+                    width: 425px;
+                    height: 84px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    text-align: center;
+                    color: #2A435D;
+                }
+            }
+            .right_column{
+                padding: 50px;
+
+                .main_title{
+                    font-weight: 700;
+                    font-size: 35px;
+                    line-height: 41px;
+                    text-align: center;
+                    color: #CC3333;
+                }
+                .sub_title{
+                    width: 425px;
+                    height: 84px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    text-align: center;
+                    color: #2A435D;
+                }
+            }
+
+        }
+    }
+    .ourTeam{
+        padding: 30px 300px;
+        .title {
+            text-align: center;
+            .main_title {
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 41px;
+                text-align: center;
+                color: #2A435D;
+            }
+
+            .sub_title {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                text-align: center;
+                color: #2A435D;
+            }
+        }
+        .chef{
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            .info_chef{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                text-align: center;
+                color: #2A435D;
+            }
+        }
+    }
+}

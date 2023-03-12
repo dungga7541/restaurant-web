@@ -1,0 +1,68 @@
+*{
+
+}
+.footer{
+    text-align: center;
+    width: 100%;
+
+    position: absolute;
+    .our_branch{
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 41px;
+        color: #2A435D;
+        background-color: #FFF8EE;
+        text-align: center;
+    }
+    .total_branch{
+        display: flex;
+        padding: 10px 100px;
+        background-color: #CC3333;
+
+        .branchs{
+            flex: 100%;
+            text-align: center;
+            background-color: #CC3333;
+            .title_1{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 41px;
+                color: #FFF8EE;
+            }
+            .title_2{
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 23px;
+                color: #FFF8EE;
+            }
+            .info_contact{
+                margin-left: 120px;
+                display: flex;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                color: #FFF8EE;
+                p{
+                    padding: 10px;
+                }
+            }
+            .title_4{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                color: #4BFF3C;
+            }
+        }
+    }
+    .copyright{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        color: #FFF8EE;
+        background: #2A435D;
+        text-align: center;
+        padding: 30px;
+    }
+}

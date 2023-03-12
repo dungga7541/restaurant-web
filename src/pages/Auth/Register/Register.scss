@@ -1,0 +1,91 @@
+.register{
+
+    .background{
+        
+        position: relative;
+        color: #FFF8EE;
+        img{
+            width: 100%;
+            position: relative;
+        }
+        h2{
+            
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 41px;
+        }
+    }
+    background-color: #FFFFFF;
+    .main_page{
+        height: 40vh; /* Full height */
+        background: #FFF8EE;
+        margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 30%; /* Could be more or less, depending on screen size */   
+        border-radius: 20px;
+        h3{
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 41px;
+            color: #CC3333;
+            text-align: center;
+        }
+        .register_form{
+            padding: 30px 120px;
+            .username{
+                .username_title{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #CC3333;
+                }
+                input[type=text]{
+                    size: 20px;
+                    padding: 12px 120px 12px 20px;
+                    margin: 10px 0;
+                    display: inline-block;
+                    background: #FFFFFF;
+                    border: 2px solid #CC3333;
+                    border-radius: 10px;            box-sizing: border-box;
+                }
+            }
+            .password{
+                .password_title{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #CC3333;
+                }
+                input[type=password] {
+                    padding: 12px 120px 12px 20px;
+                    margin: 8px 0 20px 0;
+                    display: inline-block;
+                    background: #FFFFFF;
+                    border: 2px solid #CC3333;
+                    border-radius: 10px;     
+                }
+
+            }
+            .btn_registry{
+                background: #CC3333;
+                border-radius: 10px;
+                width: 120px;
+                padding: 10px 0;
+                margin: auto;
+                text-align: center;
+                
+                p{
+                    font-weight: 400;
+                    font-size: 25px;
+                    line-height: 29px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
