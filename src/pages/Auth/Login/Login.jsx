@@ -5,6 +5,8 @@ import { useState } from 'react';
 import "./Login.scss";
 import { onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
   const [loginEmail,setLoginEmail]=useState("");
@@ -12,24 +14,31 @@ const Login = () => {
   const [user,setUser]=useState({});
   const navigate = useNavigate();
 
+  const showToastMessage = () => {
+    toast.success('Login Successful !', {
+        position: toast.POSITION.TOP_RIGHT
+    });
+};
   onAuthStateChanged(auth,(currentUser)=>{
     setUser(currentUser);
   });
-    const signIn = async (e)=>{
-      try{
-        e.preventDefault();
-        e.stopPropagation();
-          const user=await signInWithEmailAndPassword(
-          auth,
-          loginEmail,
-          loginPassword
-        );
-        navigate("/");
-        console.log(user);
-      }catch(error){
-        console.log(error);
-      }
-    };
+  const signIn = async (e)=>{
+    try{
+      e.preventDefault();
+      e.stopPropagation();
+        const user=await signInWithEmailAndPassword(
+        auth,
+        loginEmail,
+        loginPassword
+      );
+      navigate("/");
+      showToastMessage();
+      console.log(user);
+    }catch(error){
+      console.log(error);
+    }
+  };
+
   return (
     <div className='login'>
         <div className='background'>
@@ -57,7 +66,6 @@ const Login = () => {
                 <p>Remember</p>
               </div>
               <div className='forgot_password'><p>Forgot password</p></div>
-              <p>{user?.email}</p>
             </form>
         </div>
     </div>

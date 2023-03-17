@@ -1,17 +1,20 @@
 .Main {
     background-color: #FFF8EE;
+    padding: 2% 10%;
     .slider {
-        padding: 30px 300px;
         justify-content: center;
         display: flex;
-        width: 100%;
-        height: auto;
+
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
     .food_items {
-        padding: 30px 300px;
+        padding: 30px 0px;
         .title {
             text-align: center;
             .main_title {
@@ -33,11 +36,11 @@
             justify-content: center;
             display: flex;
             gap: 10px;
+            flex-wrap: wrap;
         }
     }
 
     .total_news {
-        padding: 30px 300px;
 
         .title {
             text-align: center;
@@ -54,13 +57,20 @@
             display: flex;
             padding: 20px 0px;
             justify-content: center;
-
-            .column_left {}
+            flex-wrap: wrap;
+            .column_left {
+                @media only screen and (max-width: 320px) {
+                    img{
+                      width: 100%;
+                      height: auto;
+                    }
+                  }
+            }
 
             .column_right {
                 .column_top {
                     .news_title {
-                        padding: 20px 30px;
+                        padding: 0px 30px;
 
                         .news_title_1 {
                             font-style: normal;
@@ -82,9 +92,8 @@
 
                 .column_bottom {
                     display: flex;
-
                     .left {
-                        padding: 20px 30px;
+                        padding: 0px 30px;
 
                         p {
                             padding: 15px 0;
@@ -96,10 +105,12 @@
 
                         div {
                             .btn_readmore {
-                                text-align: center;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
                                 background-color: #CC3333;
                                 border-radius: 20px;
-                                margin: 100px 70px 0px 70px;
+                                margin: 50px auto;
                             }
                         }
                     }
@@ -113,7 +124,9 @@
     .offer {
         .title {
             text-align: center;
-
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
             .main_title {
                 color: #CC3333;
                 font-weight: 800;
@@ -130,6 +143,8 @@
         }
 
         .list_offers {
+            display: block;
+            flex-wrap: nowrap;
             justify-content: center;
             width: 100%;
             display: flex;
@@ -172,9 +187,10 @@
         }
 
         .list_menus {
-            padding: 30px 300px;
             display: flex;
-
+            justify-content: center;
+            flex-wrap: nowrap
+            ;
             p {
                 border-right: 1px solid black;
                 padding: 25px 60px;
@@ -182,6 +198,7 @@
                 font-size: 25px;
                 line-height: 29px;
                 color: #CC3333;
+                
             }
 
             .active {
@@ -192,8 +209,10 @@
 
         .menu_price {
             display: flex;
-            padding: 30px 300px;
-            height: 770px;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            
             .left {
                 img {}
 
@@ -208,9 +227,9 @@
             }
 
             .right {
+                justify-content: center;
                 padding-left: 25px;
-                width: 570px;
-                height: 500px;
+                display: block;
                 .item {
                     margin: 0;
                     position: relative;
@@ -230,6 +249,7 @@
                             font-size: 18px;
                             line-height: 21px;
                             color: #2A435D;
+                            white-space: nowrap;
                         }
                     }
                     .item_price {
@@ -282,6 +302,7 @@
             .row_1{
                 display: flex;
                 justify-content: center;
+                flex-wrap: wrap;
                 img{
                     padding: 40px;
                 }
@@ -297,6 +318,8 @@
             .row_2{
                 display: flex;
                 justify-content: center;
+                flex-wrap: wrap;
+
                 img{
                     padding: 40px;
                 }
@@ -322,7 +345,11 @@
         }
     }
     .ours_restaurant{
-        padding: 30px 300px;
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
         .title{
             text-align: center;
             padding: 40px 0px;
@@ -335,6 +362,11 @@
         }
         .about_our{
             display: flex;
+
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
             .column_left{
                 .row_1{
                     display: flex;
@@ -449,7 +481,6 @@
             }
     }
     .delivery{
-        padding: 30px 300px;
         .row_1{
             display: flex;
             .title{
@@ -531,6 +562,8 @@
             padding: 50px;
             display: flex;
             text-align: center;
+            justify-content: center;
+            align-items: center;
             .customer{
                 .title_1{
                     padding: 10px;

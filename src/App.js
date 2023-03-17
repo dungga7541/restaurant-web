@@ -9,9 +9,14 @@ import Items from './pages/Items/Items';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Cart from './pages/Cart/Cart';
+
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import createItems from './pages/CreateItems/createItems';
+
 
 function App() {
+
   return (
     <div className="App">
         <Header/>
@@ -24,6 +29,8 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/contact" element={<Contact />} />
           </Routes> 
+          <createItems/>
+          <ToastContainer />
         <Footer/>
     </div>
   );

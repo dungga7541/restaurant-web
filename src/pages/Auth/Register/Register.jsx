@@ -7,12 +7,20 @@ import { useState } from 'react';
 import { auth } from '../../../firebase-config.js';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { getAuth, signOut } from "firebase/auth";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from 'react-router-dom';
 
   const Register = () => {
     const [registerEmail,setRegisterEmail]=useState("");
     const [registerPassword,setRegisterPassword] =useState("");
+    const navigate = useNavigate();
 
+    const showToastMessage = () => {
+      toast.success('Sign Up Successful', {
+          position: toast.POSITION.TOP_RIGHT
+      });
+    };
     const register = async (e)=>{
       try{
         e.preventDefault();
@@ -23,6 +31,8 @@ import { getAuth, signOut } from "firebase/auth";
           registerPassword
         );
         console.log(user);
+        showToastMessage();
+        navigate("/login");
         signOut(auth).then(() => {
           // Sign-out successful.
         }).catch((error) => {

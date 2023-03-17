@@ -4,7 +4,7 @@
 .footer{
     text-align: center;
     width: 100%;
-
+    
     position: absolute;
     .our_branch{
         font-weight: 700;
@@ -16,11 +16,13 @@
     }
     .total_branch{
         display: flex;
-        padding: 10px 100px;
+        padding: 10px 15%;
         background-color: #CC3333;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
 
         .branchs{
-            flex: 100%;
             text-align: center;
             background-color: #CC3333;
             .title_1{
@@ -38,8 +40,10 @@
                 color: #FFF8EE;
             }
             .info_contact{
-                margin-left: 120px;
                 display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
                 font-weight: 400;
                 font-size: 12px;
                 line-height: 15px;

@@ -5,7 +5,8 @@
         position: relative;
         color: #FFF8EE;
         img{
-            min-width: 100%;
+            width: 100%;
+            height: auto;
             background-size: auto;
             background-repeat: none;
             background-position: center;
@@ -23,14 +24,20 @@
         }
     }
     .ourStory{
-        padding:30px 300px;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         .story_1{
-            padding: 50px;
+            margin: 30px;
+
+            padding: 20px;
             border: 3px solid #CC3333;
             border-radius: 20px;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             .leftImg{
 
             }
@@ -55,9 +62,12 @@
             }
         }
         .story_2{
-            padding: 50px;
+            margin: 30px;
+            padding: 20px;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
+
             .leftImg{
 
             }
@@ -82,18 +92,12 @@
         }
     }
     .ourChef{
-        padding:0 300px;
         background-color: #FFDFDF;
         width: 100%;
-        height: 300px;
         display: flex;
-        justify-content: space-between;
-
+        justify-content:center;
+        flex-wrap: wrap;
         .leftColumn{
-            position: relative;
-            padding-left: 130px;
-            width: fit-content;
-
             .info_1{
                 padding: 20px 0;
                 font-weight: 400;
@@ -130,13 +134,11 @@
             }
         }
         .rightColumn{
-            padding-right: 130px;
             img{
             }
         }
     }
     .special_service{
-        padding: 30px 300px;
         .title {
             text-align: center;
             .main_title {
@@ -159,6 +161,7 @@
             display: flex;
             text-align: center;
             justify-content: center;
+            flex-wrap: wrap;
             .left_column{
             padding: 50px;
                 .main_title{
@@ -202,7 +205,6 @@
         }
     }
     .ourTeam{
-        padding: 30px 300px;
         .title {
             text-align: center;
             .main_title {
@@ -225,8 +227,12 @@
             padding: 40px;
             display: flex;
             justify-content: center;
-            text-align: center;
+            text-align: center;      
+            flex-wrap: wrap;
+
             .info_chef{
+                max-width: min-content;
+                padding: 50px;
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 21px;

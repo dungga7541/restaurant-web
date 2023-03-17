@@ -71,7 +71,7 @@ const Main = () => {
         </div>
         <div className='news'>
           <div className='column_left'>
-            <img src={healthy_1} alt="richHealthy_1"/>
+            <img src={healthy_1} media="(max-width: 768px)" alt="richHealthy_1"/>
           </div>
           <div className='column_right'>
             <div className='column_top'>
@@ -86,9 +86,11 @@ const Main = () => {
             </div>
             <div className='column_bottom'>
               <div className='left'>
-                <p><StarIcon style={{ color: "#CC3333" }}/>Simple and easy to distinguish</p>
-                <p><StarIcon style={{ color: "#CC3333" }}/>Pleasure of the moment blinded desire</p>
-                <p><StarIcon style={{ color: "#CC3333" }}/>Able to do what we like best</p>
+                <div>
+                  <p><StarIcon style={{ color: "#CC3333" }}/>Simple and easy to distinguish</p>
+                  <p><StarIcon style={{ color: "#CC3333" }}/>Pleasure of the moment blinded desire</p>
+                  <p><StarIcon style={{ color: "#CC3333" }}/>Able to do what we like best</p>
+                </div>
                 <div>
                   <p className='btn_readmore'>Read more</p>
                 </div>

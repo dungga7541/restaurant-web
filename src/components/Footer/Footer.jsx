@@ -1,6 +1,8 @@
 import "./Footer.scss";
 import WatchLaterIcon from '@mui/icons-material/WatchLater';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
 const Footer=()=>{
     return(
         <div className="footer">
