@@ -18,13 +18,14 @@
         display: flex;
         padding: 10px 15%;
         background-color: #CC3333;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
 
         .branchs{
             text-align: center;
             background-color: #CC3333;
+            padding: 30px;
             .title_1{
                 font-family: 'Roboto';
                 font-style: normal;

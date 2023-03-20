@@ -9,10 +9,10 @@ import Items from './pages/Items/Items';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Cart from './pages/Cart/Cart';
+import NotFound from './components/NotFound/NotFound';
 
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import createItems from './pages/CreateItems/createItems';
 
 
 function App() {
@@ -28,8 +28,8 @@ function App() {
             <Route path="/items" element={<Items />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound to="/404"/>} />
           </Routes> 
-          <createItems/>
           <ToastContainer />
         <Footer/>
     </div>

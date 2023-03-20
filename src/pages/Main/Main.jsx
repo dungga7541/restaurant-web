@@ -143,7 +143,7 @@ const Main = () => {
               <p>VIEW ALL MENU <ForwardIcon style={{ }}/></p>
             </div>
           <div className='right'>
-            <div className='item'>
+            <div className='item_menu'>
               <div className='item_info'>
                 <p className='text_1'>Gazpacho Garlic</p>
                 <p className='text_2'>Chilled tomato, cucumber, garlic, red pepper soup.</p>
@@ -152,7 +152,7 @@ const Main = () => {
                 <p>$55</p>
               </div>
               </div>
-            <div className='item'>
+            <div className='item_menu'>
               <div className='item_info'>
                 <p className='text_1'>Pan Con Berenjina Frita</p>
                 <p className='text_2'>Marinated seabass with sour sauce, dill & coriander on bread.</p>
@@ -161,7 +161,7 @@ const Main = () => {
                 <p>$40</p>
               </div>
               </div>
-            <div className='item'>
+            <div className='item_menu'>
               <div className='item_info'>
                 <p className='text_1'>New Lubina Marinada</p>
                 <p className='text_2'>Fried aubergine with almond on bread (2 pieces).</p>
@@ -170,7 +170,7 @@ const Main = () => {
                 <p>$45</p>
               </div>
               </div>
-            <div className='item'>
+            <div className='item_menu'>
               <div className='item_info'>
                 <p className='text_1'>Gazpacho</p>
                 <p className='text_2'>Atlantic cod fillet, chips, salad, tartare, lemon.</p>
@@ -180,7 +180,7 @@ const Main = () => {
                 <p>$35</p>
               </div>
               </div>
-            <div className='item'>
+            <div className='item_menu'>
               <div className='item_info'>
                 <p className='text_1'>Coconut Chia Bowl</p>
                 <p className='text_2'>Marinated seabass with sour saucel & coriander on bread.</p>
@@ -189,7 +189,7 @@ const Main = () => {
                 <p>$95</p>
               </div>
               </div>
-            <div className='item'>
+            <div className='item_menu'>
             <div className='item_info'>
                 <p className='text_1'>New Lubina Marinada</p>
                 <p className='text_2'>Atlantic cod fillet, chips, salad, tartare, lemon.</p>
@@ -198,7 +198,7 @@ const Main = () => {
                 <p>$120</p>
               </div>
             </div>
-            <div className='item'>
+            <div className='item_menu'>
               <div className='item_info'>
                 <p className='text_1'>Gazpacho Garlic</p>
                 <p className='text_2'>Chilled tomato, cucumber, garlic, red pepper soup.</p>

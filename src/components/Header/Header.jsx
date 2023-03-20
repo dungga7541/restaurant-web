@@ -8,6 +8,7 @@ import Register from './../../pages/Auth/Register/Register';
 import Items from "../../pages/Items/Items";
 import About from "../../pages/About/About";
 import Contact from "../../pages/Contact/Contact";
+import { ShoppingCart } from '@mui/icons-material';
 
 import { useState, useEffect } from 'react';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
@@ -17,12 +18,34 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {useNavigate} from 'react-router-dom';
+import { useSelector } from 'react-redux';
+
 
 const Header = () => {
     const [open, setHandleOpen] = useState(false);
     const [authUser, setAuthUser] = useState(null);
     const [linkCart,setLinkCart]= useState("");
 
+    const navigate = useNavigate()
+    const cart = useSelector((state) => state.cart)
+  
+    const getTotalQuantity = () => {
+      let total = 0
+      cart.forEach(item => {
+        total += item.quantity
+      })
+      return total
+    }
+    const setLink=()=>{
+        console.log(authUser);
+        if(authUser!==null) {
+            setLinkCart("/cart");
+        }else{
+            setLinkCart("/");
+            toast.error('Please login first !!')
+        }
+    }
     const showToastMessage = () => {
         toast.success('Sign Out Successful', {
             position: toast.POSITION.TOP_RIGHT
@@ -43,15 +66,6 @@ const Header = () => {
             listen();
         }
     }, []);
-    const setLink=()=>{
-        console.log(authUser);
-        if(authUser!==null) {
-            setLinkCart("/cart");
-        }else{
-            setLinkCart("/");
-            toast.error('Please login first !!')
-        }
-    }
     const handleOpen = () => {
         setHandleOpen(!open);
         console.log(open)
@@ -75,11 +89,11 @@ const Header = () => {
                         <Link to="/" element={Main} style={{ textDecoration: 'none' }}><span>HOME</span></Link>
                         <Link to="/about" element={About} style={{ textDecoration: 'none' }}><span>ABOUT</span></Link>
                         <Link to="/items" element={Items} style={{ textDecoration: 'none' }}><span>ITEMS</span></Link>
-                        <Link to="/items" element={Items} style={{ textDecoration: 'none' }}><span>ITEMS</span></Link>
                         <Link to="/contact" element={Contact} style={{ textDecoration: 'none' }}><span>CONTACT</span></Link>
                 </div>
                 <div className="right">
-                    <Link to={linkCart} element={Cart} style={{ textDecoration: 'none' }}><span onClick={setLink}><ShoppingCartIcon /> </span></Link>
+                    <Link to={linkCart} element={Cart} style={{ textDecoration: 'none' }}> {authUser !==null ?<span onClick={setLink}><ShoppingCartIcon /><p>{getTotalQuantity() || 0}</p></span>:""}</Link>
+
                     {authUser !==null ?
                     <div>
                         {authUser ? <div className="userLogin"  onClick={handleOpen}>
@@ -111,6 +125,7 @@ const Header = () => {
                         <Link to="register" element={<Register />} style={{ textDecoration: 'none' }}><span>Register</span></Link>
                     </div>}
                 </div>
+
             </nav>
         </div>
     )

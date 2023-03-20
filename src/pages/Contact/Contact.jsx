@@ -5,6 +5,7 @@ import { Facebook, Instagram, LinkedIn, LocalPhone, LockClock, Mail, Room, Twitt
 import map from "../../assets/images/map.png";
 import RoomIcon from '@mui/icons-material/Room';
 import WatchLaterIcon from '@mui/icons-material/WatchLater';
+
 const Contact = () => {
   return (
     <div className='contact'>
