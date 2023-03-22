@@ -20,7 +20,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {useNavigate} from 'react-router-dom';
 import { useSelector } from 'react-redux';
-
+import LogoutIcon from '@mui/icons-material/Logout';
+import PersonIcon from '@mui/icons-material/Person';
 
 const Header = () => {
     const [open, setHandleOpen] = useState(false);
@@ -88,11 +89,11 @@ const Header = () => {
                 <div className="center">
                         <Link to="/" element={Main} style={{ textDecoration: 'none' }}><span>HOME</span></Link>
                         <Link to="/about" element={About} style={{ textDecoration: 'none' }}><span>ABOUT</span></Link>
-                        <Link to="/items" element={Items} style={{ textDecoration: 'none' }}><span>ITEMS</span></Link>
+                        <Link to="/items" element={Items} style={{ textDecoration: 'none' }} ><span>ITEMS</span></Link>
                         <Link to="/contact" element={Contact} style={{ textDecoration: 'none' }}><span>CONTACT</span></Link>
                 </div>
                 <div className="right">
-                    <Link to={linkCart} element={Cart} style={{ textDecoration: 'none' }}> {authUser !==null ?<span onClick={setLink}><ShoppingCartIcon /><p>{getTotalQuantity() || 0}</p></span>:""}</Link>
+                    <Link to={linkCart} element={Cart} style={{ textDecoration: 'none' }}> {authUser !==null ?<div className="cartButton"><span className="cartIcons" onClick={setLink}><ShoppingCartIcon /></span><p className="numberBehind">{getTotalQuantity() || 0}</p></div>:""}</Link>
 
                     {authUser !==null ?
                     <div>
@@ -105,10 +106,10 @@ const Header = () => {
                                             {open ? (
                                                 <ul className="menu">
                                                     <li className="menu-item">
-                                                        <button>Info</button>
+                                                        <button><Link to="/edituser" style={{ textDecoration: 'none' }}><PersonIcon/>Info</Link></button>
                                                     </li>
                                                     <li className="menu-item">
-                                                        <button onClick={userSignOut}>Sign Out  </button>
+                                                        <button onClick={userSignOut}><LogoutIcon style={{ textDecoration: 'none'}}/>Sign Out  </button>
                                                     </li>
                                                 </ul>
                                             ) : null}

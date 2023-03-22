@@ -7,6 +7,7 @@ import list_item_4 from "../../assets/images/item/image_itemsList_4.png"
 import list_item_5 from "../../assets/images/item/image_itemsList_5.png"
 import list_item_6 from "../../assets/images/item/image_itemsList_6.png"
 
+
 // import { ShoppingCart } from '@mui/icons-material';
 // import {useNavigate} from 'react-router-dom';
 // import { useSelector } from 'react-redux';
@@ -23,7 +24,6 @@ import list_item_6 from "../../assets/images/item/image_itemsList_6.png"
 //     })
 //     return total
 //   }
-
   return (
     <div className="items">
       <div className="itemsContainer">

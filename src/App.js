@@ -13,6 +13,7 @@ import NotFound from './components/NotFound/NotFound';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import EditUser from "./pages/EditUser/EditUser";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/items" element={<Items />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/edituser" element={<EditUser />} />
             <Route path="*" element={<NotFound to="/404"/>} />
           </Routes> 
           <ToastContainer />
