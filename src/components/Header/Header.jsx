@@ -73,6 +73,7 @@ const Header = () => {
     };
     const userSignOut = () => {
         signOut(auth).then(() => {
+            navigate("/");
             toast.success("Sign Out Successful");
             }
         ).catch(
