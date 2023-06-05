@@ -3,7 +3,7 @@ import login_res from "../../../assets/images/background-login-res.png";
 import { auth } from '../../../firebase-config.js';
 import { useState } from 'react';
 import "./Login.scss";
-import { onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth';
+import { onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -74,7 +74,8 @@ const Login = () => {
                 <input type='checkbox' />
                 <p>Remember</p>
               </div>
-              <div className='forgot_password'><p>Forgot password</p></div>
+              <div className='forgot_password'><p>tk: 123@gmail.com</p></div>
+              <div className='forgot_password'><p>pass: 123456</p></div>
             </form>
         </div>
     </div>
