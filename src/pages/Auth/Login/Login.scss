@@ -25,7 +25,7 @@
     }
     background-color: #FFFFFF;
     .main_page{
-        height: 40vh; /* Full height */
+        height: 45vh; /* Full height */
         background: #FFF8EE;
         margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
         border: 1px solid #888;
@@ -108,10 +108,8 @@
             }
             .forgot_password{
                 text-align: center;
-                font-weight: 400;
-                font-size: 25px;
-                line-height: 29px;
-                color: #4BFF3C;
+                font-size: 20px;
+                color: red;
             }
         }
     }

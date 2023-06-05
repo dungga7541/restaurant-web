@@ -90,7 +90,7 @@ const Header = () => {
                 <div className="center">
                         <Link to="/" element={Main} style={{ textDecoration: 'none' }}><span>HOME</span></Link>
                         <Link to="/about" element={About} style={{ textDecoration: 'none' }}><span>ABOUT</span></Link>
-                        <Link to="/items" element={Items} style={{ textDecoration: 'none' }} ><span>ITEMS</span></Link>
+                        <Link to="/items" element={Items} style={{ textDecoration: 'none' }} ><span>PRODUCT</span></Link>
                         <Link to="/contact" element={Contact} style={{ textDecoration: 'none' }}><span>CONTACT</span></Link>
                 </div>
                 <div className="right">

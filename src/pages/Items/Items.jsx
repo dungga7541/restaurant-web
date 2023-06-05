@@ -44,7 +44,7 @@ import list_item_6 from "../../assets/images/item/image_itemsList_6.png"
 
           <Item
             id={3}
-            title="Belgium waffles with strawberries"
+            title="waffles with strawberries"
             price={199}
             image={list_item_3}
           />
